@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InvernaderosConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InvernaderosConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Invernadero.My.MySettings.GlobalReference.Default.InvernaderosConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vResumenQuarterlyTableAdapter" GeneratorDataComponentClassName="vResumenQuarterlyTableAdapter" Name="vResumenQuarterly" UserDataComponentName="vResumenQuarterlyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InvernaderosConnectionString1 (MySettings)" DbObjectName="Invernaderos.dbo.vResumenQuarterly" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Gasto, Ingreso, Año, Quarter FROM dbo.vResumenQuarterly</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gasto" DataSetColumn="Gasto" />
+              <Mapping SourceColumn="Ingreso" DataSetColumn="Ingreso" />
+              <Mapping SourceColumn="Año" DataSetColumn="Año" />
+              <Mapping SourceColumn="Quarter" DataSetColumn="Quarter" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vResumenQuarterly" msprop:Generator_TableClassName="vResumenQuarterlyDataTable" msprop:Generator_TableVarName="tablevResumenQuarterly" msprop:Generator_TablePropName="vResumenQuarterly" msprop:Generator_RowDeletingName="vResumenQuarterlyRowDeleting" msprop:Generator_RowChangingName="vResumenQuarterlyRowChanging" msprop:Generator_RowEvHandlerName="vResumenQuarterlyRowChangeEventHandler" msprop:Generator_RowDeletedName="vResumenQuarterlyRowDeleted" msprop:Generator_UserTableName="vResumenQuarterly" msprop:Generator_RowChangedName="vResumenQuarterlyRowChanged" msprop:Generator_RowEvArgName="vResumenQuarterlyRowChangeEvent" msprop:Generator_RowClassName="vResumenQuarterlyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gasto" msprop:Generator_ColumnVarNameInTable="columnGasto" msprop:Generator_ColumnPropNameInRow="Gasto" msprop:Generator_ColumnPropNameInTable="GastoColumn" msprop:Generator_UserColumnName="Gasto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ingreso" msprop:Generator_ColumnVarNameInTable="columnIngreso" msprop:Generator_ColumnPropNameInRow="Ingreso" msprop:Generator_ColumnPropNameInTable="IngresoColumn" msprop:Generator_UserColumnName="Ingreso" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:int" minOccurs="0" />
+              <xs:element name="Quarter" msprop:Generator_ColumnVarNameInTable="columnQuarter" msprop:Generator_ColumnPropNameInRow="Quarter" msprop:Generator_ColumnPropNameInTable="QuarterColumn" msprop:Generator_UserColumnName="Quarter" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
