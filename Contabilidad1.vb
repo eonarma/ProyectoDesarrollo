@@ -5,6 +5,7 @@
     Private Sub Contabilidad1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conexion.Consulta("SELECT ID_LibroDiario AS ID, L.Movimiento_LibroDiario AS Movimiento, T.TipoCuenta AS Gestion, L.Monto_TipoCuenta AS Monto, L.Fecha_Movimiento AS Fecha FROM LIBRODIARIO L INNER JOIN TIPOCUENTA T ON T.ID_TipoCuenta = L.ID_TipoCuenta", "LIBRODIARIO", dgvVentas)
         conexion.ConsultacmbBox("SELECT * FROM TIPOCUENTA", "ID_TipoCuenta", "TipoCuenta", contaCRUD.cbGestion)
+        conexion.ConsultacmbBox("SELECT ROUND((SELECT SUM(Monto_TipoCuenta) FROM LIBRODIARIO WHERE ID_TipoCuenta = 1) - (SELECT SUM(Monto_TipoCuenta) FROM LIBRODIARIO WHERE ID_TipoCuenta = 2),4) AS [Balance]", "Balance", "Balance", cbBalance)
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click, btnModificar.Click, btnBorrar.Click

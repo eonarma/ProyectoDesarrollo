@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ContabilidadCRUD
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ContabilidadCRUD
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblContabilidad = New System.Windows.Forms.Label()
         Me.lblFecha = New System.Windows.Forms.Label()
@@ -104,7 +104,7 @@ Partial Class ContabilidadCRUD
         Me.txtFecha.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.Size = New System.Drawing.Size(196, 22)
-        Me.txtFecha.TabIndex = 39
+        Me.txtFecha.TabIndex = 2
         Me.txtFecha.Text = "12/10/2023"
         Me.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -114,7 +114,7 @@ Partial Class ContabilidadCRUD
         Me.txtMonto.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMonto.Name = "txtMonto"
         Me.txtMonto.Size = New System.Drawing.Size(196, 22)
-        Me.txtMonto.TabIndex = 41
+        Me.txtMonto.TabIndex = 4
         Me.txtMonto.Text = "L 1,232.00"
         Me.txtMonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -125,7 +125,7 @@ Partial Class ContabilidadCRUD
         Me.txtComentario.Multiline = True
         Me.txtComentario.Name = "txtComentario"
         Me.txtComentario.Size = New System.Drawing.Size(332, 90)
-        Me.txtComentario.TabIndex = 42
+        Me.txtComentario.TabIndex = 5
         '
         'btnMode
         '
@@ -133,7 +133,7 @@ Partial Class ContabilidadCRUD
         Me.btnMode.Margin = New System.Windows.Forms.Padding(7, 6, 7, 25)
         Me.btnMode.Name = "btnMode"
         Me.btnMode.Size = New System.Drawing.Size(100, 28)
-        Me.btnMode.TabIndex = 44
+        Me.btnMode.TabIndex = 7
         Me.btnMode.Text = "Guardar"
         Me.btnMode.UseVisualStyleBackColor = True
         '
@@ -143,7 +143,7 @@ Partial Class ContabilidadCRUD
         Me.btnCancelar.Margin = New System.Windows.Forms.Padding(7, 6, 27, 25)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(100, 28)
-        Me.btnCancelar.TabIndex = 45
+        Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
@@ -153,7 +153,7 @@ Partial Class ContabilidadCRUD
         Me.txtboxID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtboxID.Name = "txtboxID"
         Me.txtboxID.Size = New System.Drawing.Size(196, 22)
-        Me.txtboxID.TabIndex = 47
+        Me.txtboxID.TabIndex = 1
         Me.txtboxID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblID
@@ -175,7 +175,7 @@ Partial Class ContabilidadCRUD
         Me.cbGestion.Margin = New System.Windows.Forms.Padding(7, 30, 20, 5)
         Me.cbGestion.Name = "cbGestion"
         Me.cbGestion.Size = New System.Drawing.Size(203, 24)
-        Me.cbGestion.TabIndex = 48
+        Me.cbGestion.TabIndex = 3
         '
         'ContabilidadCRUD
         '

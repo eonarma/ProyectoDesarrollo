@@ -22,13 +22,13 @@ Partial Class Contabilidad1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblOrdenes = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.dgvVentas = New System.Windows.Forms.DataGridView()
+        Me.cbBalance = New System.Windows.Forms.ComboBox()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,20 +43,6 @@ Partial Class Contabilidad1
         Me.lblOrdenes.Size = New System.Drawing.Size(161, 42)
         Me.lblOrdenes.TabIndex = 11
         Me.lblOrdenes.Text = "Balance"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(473, 30)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(105, 53)
-        Me.TextBox1.TabIndex = 14
-        Me.TextBox1.Text = "L 0"
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.TextBox1.UseWaitCursor = True
         '
         'btnNuevo
         '
@@ -109,10 +95,20 @@ Partial Class Contabilidad1
         Me.dgvVentas.Name = "dgvVentas"
         Me.dgvVentas.RowHeadersVisible = False
         Me.dgvVentas.RowHeadersWidth = 51
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.dgvVentas.RowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.dgvVentas.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvVentas.Size = New System.Drawing.Size(773, 260)
         Me.dgvVentas.TabIndex = 19
+        '
+        'cbBalance
+        '
+        Me.cbBalance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
+        Me.cbBalance.FormattingEnabled = True
+        Me.cbBalance.Location = New System.Drawing.Point(462, 48)
+        Me.cbBalance.Name = "cbBalance"
+        Me.cbBalance.Size = New System.Drawing.Size(121, 22)
+        Me.cbBalance.TabIndex = 20
+        Me.cbBalance.TabStop = False
         '
         'Contabilidad1
         '
@@ -120,11 +116,11 @@ Partial Class Contabilidad1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(845, 469)
+        Me.Controls.Add(Me.cbBalance)
         Me.Controls.Add(Me.dgvVentas)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnNuevo)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblOrdenes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -138,9 +134,9 @@ Partial Class Contabilidad1
     End Sub
 
     Friend WithEvents lblOrdenes As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnNuevo As Button
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnBorrar As Button
     Friend WithEvents dgvVentas As DataGridView
+    Friend WithEvents cbBalance As ComboBox
 End Class

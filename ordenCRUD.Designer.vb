@@ -167,7 +167,7 @@ Partial Class ordenCRUD
         Me.Controls.Add(Me.txtboxID)
         Me.Controls.Add(Me.lblMode)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "ordenCRUD"
         Me.Text = "Orden"
         Me.ResumeLayout(False)
